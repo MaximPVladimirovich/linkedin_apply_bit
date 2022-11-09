@@ -15,26 +15,26 @@ pip install -r requirements.txt
 Next, you need to fill out the config.yaml file. Most of this is self-explanatory but if you need explanations please see the end of this README.
 
 ```yaml
-email: email@domain.com
-password: yourpassword
+email: maxim.bleeker@gmail.com
+password: ironclad35
 
 disableAntiLock: False
 
-remote: False
+remote: True
 
 experienceLevel:
  internship: False
  entry: True
- associate: False
+ associate: True
  mid-senior level: False
  director: False
  executive: False
  
 jobTypes:
  full-time: True
- contract: False
- part-time: False
- temporary: False
+ contract: True
+ part-time: True
+ temporary: True
  internship: False
  other: False
  volunteer: False
@@ -46,9 +46,8 @@ date:
  24 hours: False
  
 positions:
- #- First position
- #- A second position
- #- A third position
+ - Frontend Developer
+ - Web Developer
  #- ...
 locations:
  #- First location
@@ -57,18 +56,23 @@ locations:
  #- ...
 distance: 25
 
-outputFileDirectory: C:\Users\myDirectory\
+outputFileDirectory: ./output
 
 companyBlacklist:
- #- company
+ - Boomnation
  #- company2
 
 titleBlacklist:
- #- word1
- #- word2
+ - Senior
+ - Snr
+ - Lead
+ - Manager
+ - Director
+ - Staff
+ - Principal
 
 uploads:
- resume: C:\Users\myDirectory\Resume.pdf
+ resume: JamesMaximBleeker.pdf
  # Cover letter is optional
  #coverLetter: C:\Users\myDirectory\CoverLettter.pdf
 
@@ -87,11 +91,11 @@ checkboxes:
  # We must fill this position urgently. Can you start immediately? (yes/no checkbox)
  urgentFill: True
  # Are you comfortable commuting to this job's location? (yes/no checkbox)
- commute: True
+ commute: False
  # Have you completed the following level of education: DEGREE TYPE? (yes/no checkbox)
  degreeCompleted:
   - High School Diploma
-  - Bachelor's Degree
+  #- Bachelor's Degree
   # - Associate's Degree
   # - Master's Degree
   # - Master of Business Administration
@@ -102,7 +106,7 @@ checkboxes:
  backgroundCheck: True
 
 # ------------ Additional parameters: univeristyGpa ---------------
-universityGpa: 4.0
+universityGpa: 0
 
 # ------------ Additional parameters: languages ---------------
 languages:
@@ -123,7 +127,7 @@ industry:
  Customer Service: 0
  Distribution Design: 0
  Education: 0
- Engineering: 0
+ Engineering: 2
  Finance: 0
  General Business: 0
  Health Care Provider: 0
@@ -151,7 +155,19 @@ industry:
  #C++: 0
  #Python: 1
  # default to put for any skill that you did not list
+ Javascript: 2
+ React: 2
+ React Native: 2
+ Node: 2
+ HTML: 2
+ CSS: 2
+ Python: 2
+ MongoDB: 1
+ Supabase: 1
+ Angular: 2
+ Ionic: 2
  default: 0
+ selenium: 1
  # end custom ones
 
 
@@ -164,16 +180,16 @@ technology:
  default: 0
 # ------------ Additional parameters: personal info ---------------
 personalInfo:
- First Name: FirstName
- Last Name: LastName
+ First Name: James
+ Last Name: Bleeker
  Phone Country Code: Canada (+1) # See linkedin for your country code, must be exact
- Mobile Phone Number: 1234567890
- Street address: 123 Fake Street
- City: Red Deer, Alberta # Include the state/province as well!
- State: YourState
- Zip: YourZip/Postal
- Linkedin: https://www.linkedin.com/in/my-linkedin-profile
- Website: https://www.my-website.com # github/website is interchangable here
+ Mobile Phone Number: 4157555324
+ Street address: 1300 Newning Avenue
+ City: Austin # Include the state/province as well!
+ State: Texas
+ Zip: 78704
+ Linkedin: 
+ Website:  # github/website is interchangable here
 
 # ------------ Additional parameters: USA employment crap ---------------
 eeo:
@@ -181,7 +197,7 @@ eeo:
  race: None
  vetran: None
  disability: None
- citizenship: Canadian
+ citizenship: United States Citizen
 ```
 
 
